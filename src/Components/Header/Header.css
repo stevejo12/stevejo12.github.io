@@ -1,0 +1,45 @@
+.header {
+  overflow: auto;
+  min-height: 35px;
+  margin: 0 10px;
+  display: flex;
+}
+
+.header__menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__menu > i {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.header__sidebar {
+  position: absolute;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  min-width: 100px;
+}
+
+.header__sidebarClose {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__sidebarClose > i {
+  cursor: pointer;
+}
+
+.header__sidebarOption > button {
+  text-decoration: none;
+  border: none;
+  background: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
