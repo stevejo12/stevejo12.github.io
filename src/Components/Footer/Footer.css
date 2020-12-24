@@ -5,20 +5,3 @@
   text-align: center;
   padding: 20px 0px;
 }
-
-.footer__socials {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.footer__icon > a {
-  display: inline-block;
-  margin: 0 5px;
-  text-decoration: none;
-  color: grey;
-}
-
-.footer__icon > a:hover {
-  color: white;
-}
