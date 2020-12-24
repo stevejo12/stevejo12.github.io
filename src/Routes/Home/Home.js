@@ -4,7 +4,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <section className="home">
+    <section id="home">
       <div className="home__container">
         <h4>Steve Vinsensius Jo</h4>
         <h2>I am a Web Developer</h2>
@@ -22,7 +22,7 @@ function Home() {
         </div>
       </div>
       <div className="home__start">
-        <a href="/">Let's Get to Know me <i className="fas fa-terminal"></i></a>
+        <a href="#about">Let's Get to Know me <i className="fas fa-terminal"></i></a>
       </div>
     </section>
   )

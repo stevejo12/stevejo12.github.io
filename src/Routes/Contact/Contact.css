@@ -1,0 +1,43 @@
+#contact {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 100px - 40px);
+  background-color: #f9f9f9;
+  color: black;
+  text-align: center;
+}
+
+.contact__title, .contact__description {
+  margin-bottom: 20px;
+}
+
+.contact__option {
+  display: inline-block;
+}
+
+.contact__option > a {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact__option > a:hover {
+  color: white;
+}
+
+.contact__option > a > i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  border: solid 1px white;
+  display: inline-block;
+}
+
+.contact__option > a:hover > i {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}

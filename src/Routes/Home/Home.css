@@ -1,7 +1,7 @@
-.home {
+#home {
   padding-top: 100px;
   padding-bottom: 40px;
-  min-height: calc(100vh - 35px - 100px - 40px);
+  min-height: calc(100vh - 55px - 100px - 40px);
   background-color: black;
   text-align: center;
   color: white;
@@ -45,10 +45,11 @@ h2 {
   border-radius: 50%;
   background-color: black;
   border: solid 1px white;
+  display: inline-block;
 }
 
 .home__start > a {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   text-decoration: none;
   border: solid 1px white;
   padding: 10px;

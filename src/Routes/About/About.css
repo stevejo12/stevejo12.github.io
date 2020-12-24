@@ -1,0 +1,8 @@
+#about {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 100px - 40px);
+  background-color: white;
+  color: black;
+  text-align: center;
+}
