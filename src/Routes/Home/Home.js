@@ -20,6 +20,11 @@ function Home() {
             <i className="fab fa-instagram"></i>
           </a>
         </div>
+        <div className="home__icon">
+          <a href="https://www.github.com/stevejo12" target="_blank" rel="noreferrer noopener">
+            <i className="fab fa-github"></i>
+          </a>
+        </div>
       </div>
       <div className="home__start">
         <a href="#about">Let's Get to Know me <i className="fas fa-terminal"></i></a>

@@ -1,0 +1,21 @@
+.quotes {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+.quotes > div {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.quotes__text {
+  font-size: 30px;
+  margin-bottom: 10px !important;
+}
+
+.quotes__by {
+  font-size: 15px;
+}

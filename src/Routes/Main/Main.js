@@ -6,6 +6,7 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 
 import './Main.css';
+import Quotes from '../../Components/Quotes/Quotes';
 
 function Main() {
   return (
@@ -14,6 +15,7 @@ function Main() {
       <Home />
       <About />
       <Contact />
+      <Quotes />
       <Footer />
     </div>
   )
