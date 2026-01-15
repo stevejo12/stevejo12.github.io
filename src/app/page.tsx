@@ -85,7 +85,7 @@ export default function Home() {
             <li>
               Github: {" "}
               <a href="http://www.github.com/stevejo12" target="_blank" rel="noreferrer noopener">
-                Steve's Github
+                Steve&apos;s Github
               </a>
             </li>
           </ul>

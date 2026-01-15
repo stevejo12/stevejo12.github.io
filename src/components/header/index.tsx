@@ -8,8 +8,8 @@ const Header = () => {
       <div className='middle-spacing'>
         <h1 className={styles.header_name}>Steve Vinsensius Jo</h1>
         <div className={styles.header_links}>
-          <a href="/" className='noDecoration-link'><h2>Home</h2></a>
-          <a href="/" className='noDecoration-link'><h2>Projects</h2></a>
+          <a href="#" className='noDecoration-link'><h2>Home</h2></a>
+          <a href="#projects" className='noDecoration-link'><h2>Projects</h2></a>
           <a href="#education" className='noDecoration-link'><h2>Education</h2></a>
           <a href="#contact" className='noDecoration-link'><h2>Contact</h2></a>
           <a
