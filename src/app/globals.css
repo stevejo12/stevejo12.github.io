@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0;
@@ -8,6 +12,29 @@ body {
 h1, h2, h3, h4, h5, h6, p {
   font-family: Arial, Helvetica, sans-serif;
   margin:0;
+}
+
+.noMarginNoPadding {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.middle-spacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.noDecoration-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+li.noDecoration-list {
+  list-style: none;
 }
 
 code, pre {
@@ -39,4 +66,15 @@ code, pre {
 
 .button-secondary:hover {
   background-color: rgb(225, 225, 225);
+}
+
+.list-wrapper-template-1 {
+  display: grid;
+  gap: 14px;
+}
+
+.square-template-1 {
+  border: solid 1px rgb(11,11,11);
+  /* margin: 10px 0; */
+  padding: 16px;
 }

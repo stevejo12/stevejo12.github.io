@@ -3,26 +3,20 @@
   height: min(100vh,1024px);
   margin: 0 auto;
   line-height: 1.5;
+  padding: 0 18px;
 }
 
 .home_container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: calc(100% - 72px);
-  padding: 36px;
-  margin: 0 auto;
-  height: calc(100% - 72px);
+  padding: 18px 0;
 }
 
 .home_header {
   width: 50%;
-}
-
-.home_header_name {
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .home_header_intro_title {
@@ -48,21 +42,8 @@
   margin-right: 16px;
 }
 
-.home_aboutMe {
-  margin: 40px 0;
-}
-
-.home_aboutMe_name {
-  margin-bottom: 16px;
-}
-
-.home_footer {
-  display: flex;
-  justify-content: space-around;
-}
-
-.home_footer > * {
-  cursor: pointer;
+.section_margin {
+  padding: 20px 0;
 }
 
 /* medium style tablets */
