@@ -1,0 +1,50 @@
+:root {
+  --color-bg: #0a081a;
+  --color-bg2: #13102a;
+  --color-panel: rgba(255, 255, 255, 0.03);
+  --color-panel-border: rgba(180, 140, 255, 0.15);
+  --color-fg: #efe9ff;
+  --color-muted: #8b85a8;
+  --color-rule: rgba(255, 255, 255, 0.08);
+  --color-violet: #b48cff;
+  --color-violet-deep: #7c5cff;
+  --color-amber: #f4a261;
+  --color-cyan: #7dd3fc;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-anchor {
+  scroll-margin-top: 88px;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}

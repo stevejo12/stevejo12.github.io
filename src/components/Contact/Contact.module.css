@@ -1,0 +1,123 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 60px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secHead {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-violet);
+  letter-spacing: 2.5px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.secTitle {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-bottom: 36px;
+  line-height: 1.1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.card {
+  display: block;
+  background: var(--color-panel);
+  border: 1px solid var(--color-panel-border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.card:hover {
+  border-color: var(--color-violet);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--color-muted);
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 13.5px;
+  color: var(--color-fg);
+  word-break: break-word;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--color-violet) 0%, var(--color-violet-deep) 100%);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 13px 24px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(180, 140, 255, 0.25);
+}
+
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-panel);
+  color: var(--color-fg);
+  text-decoration: none;
+  border: 1px solid var(--color-panel-border);
+  padding: 13px 24px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 50px 20px;
+  }
+
+  .secTitle {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

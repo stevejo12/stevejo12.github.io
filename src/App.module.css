@@ -1,0 +1,19 @@
+.root {
+  width: 100%;
+  min-height: 100%;
+  background: radial-gradient(ellipse 80% 50% at 70% 0%, rgba(124, 92, 255, 0.2) 0%, transparent 55%),
+    var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  position: relative;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(180, 140, 255, 0.15) 1px, transparent 1.5px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, black, black 40%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, black, black 40%, transparent);
+}

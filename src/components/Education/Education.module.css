@@ -1,0 +1,116 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 60px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secHead {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-violet);
+  letter-spacing: 2.5px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.secTitle {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-bottom: 36px;
+  line-height: 1.1;
+}
+
+.dotAccent {
+  color: var(--color-violet);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: var(--color-panel);
+  border: 1px solid var(--color-panel-border);
+  border-radius: 14px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-muted);
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.capstone {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0;
+  color: var(--color-fg);
+}
+
+.focusList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.focusItem {
+  padding: 5px 0;
+  font-size: 13.5px;
+  color: var(--color-fg);
+}
+
+.focusMarker {
+  color: var(--color-violet);
+  margin-right: 8px;
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(244, 162, 97, 0.12);
+  border: 1px solid rgba(244, 162, 97, 0.3);
+  color: var(--color-amber);
+  font-size: 13px;
+  font-family: var(--font-mono);
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-amber);
+  border-radius: 3px;
+  box-shadow: 0 0 8px var(--color-amber);
+}
+
+.statusNote {
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 50px 20px;
+  }
+
+  .secTitle {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

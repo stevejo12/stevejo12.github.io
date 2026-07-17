@@ -1,0 +1,139 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 60px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secHead {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-violet);
+  letter-spacing: 2.5px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.secTitle {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-bottom: 36px;
+  line-height: 1.1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: var(--color-panel);
+  border: 1px solid var(--color-panel-border);
+  border-radius: 14px;
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-violet);
+  box-shadow: 0 12px 36px rgba(180, 140, 255, 0.2);
+}
+
+.glow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(180, 140, 255, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  align-self: flex-start;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.tag-aiml {
+  color: var(--color-violet);
+  background: rgba(180, 140, 255, 0.1);
+}
+
+.tag-frontend {
+  color: var(--color-cyan);
+  background: rgba(125, 211, 252, 0.1);
+}
+
+.tag-fullstack {
+  color: var(--color-amber);
+  background: rgba(244, 162, 97, 0.1);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.4px;
+}
+
+.blurb {
+  font-size: 13.5px;
+  color: var(--color-muted);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-muted);
+  border: 1px solid var(--color-rule);
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 50px 20px;
+  }
+
+  .secTitle {
+    font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

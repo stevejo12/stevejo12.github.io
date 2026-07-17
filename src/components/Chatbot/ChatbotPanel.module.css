@@ -1,0 +1,134 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  background: rgba(20, 16, 40, 0.6);
+  border: 1px solid var(--color-panel-border);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  overflow: hidden;
+  height: 440px;
+  backdrop-filter: blur(12px);
+}
+
+.header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-panel-border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: var(--color-violet);
+  font-family: var(--font-mono);
+}
+
+.poweredBy {
+  margin-left: auto;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--color-violet);
+  box-shadow: 0 0 12px var(--color-violet);
+}
+
+.scroller {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bubble {
+  max-width: 85%;
+  padding: 9px 13px;
+  border-radius: 14px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.bubbleUser {
+  align-self: flex-end;
+  background: linear-gradient(135deg, var(--color-violet), var(--color-violet-deep));
+  color: #fff;
+}
+
+.bubbleBot {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-fg);
+}
+
+.dots {
+  opacity: 0.6;
+}
+
+.suggest {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 16px 8px;
+}
+
+.chip {
+  font-size: 11.5px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--color-panel-border);
+  background: transparent;
+  color: var(--color-muted);
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.2px;
+  transition: border-color 0.15s;
+}
+
+.chip:hover {
+  border-color: var(--color-violet);
+}
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--color-panel-border);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-fg);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.send {
+  background: var(--color-violet);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 14px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12.5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.send:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}

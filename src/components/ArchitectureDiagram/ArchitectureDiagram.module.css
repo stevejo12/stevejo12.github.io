@@ -1,0 +1,95 @@
+.arch {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 56px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.box {
+  background: var(--color-panel);
+  border: 1px solid var(--color-panel-border);
+  border-radius: 18px;
+  padding: 32px 36px;
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.node {
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nodeIn {
+  background: rgba(125, 211, 252, 0.08);
+  border: 1px solid rgba(125, 211, 252, 0.3);
+}
+
+.nodeAi {
+  background: rgba(180, 140, 255, 0.1);
+  border: 1px solid rgba(180, 140, 255, 0.3);
+}
+
+.nodeOut {
+  background: rgba(244, 162, 97, 0.1);
+  border: 1px solid rgba(244, 162, 97, 0.3);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  color: var(--color-muted);
+  margin-bottom: 4px;
+}
+
+.val {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.line {
+  height: 1px;
+  background: var(--color-violet);
+  flex: 1;
+  opacity: 0.5;
+}
+
+.lineAmber {
+  background: var(--color-amber);
+}
+
+.arrow {
+  color: var(--color-violet);
+  font-size: 18px;
+}
+
+.arrowAmber {
+  color: var(--color-amber);
+}
+
+@media (max-width: 900px) {
+  .arch {
+    padding: 20px 20px 50px;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+  .connector {
+    transform: rotate(90deg);
+    padding: 4px 0;
+  }
+}
