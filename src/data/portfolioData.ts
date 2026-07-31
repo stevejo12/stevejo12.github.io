@@ -116,10 +116,10 @@ export const portfolioTimeline: TimelineEntry[] = [
   {
     year: '2020 – 2025',
     title: 'Career reset',
-    org: 'Job search, then administrative work',
+    org: 'Five years, one long pause',
     side: 'bridge',
     blurb:
-      'Stepped away from full-time engineering during a tough hiring market; spent the back half of this stretch in an administrative role while preparing to return to technical work.',
+      'Didn\`t land technical role in 2020. Until in 2022, I picked up administrative role instead. Spent the last couple of years planning to return to tech. Which now I am pursuing Masters in Applied Data Science',
   },
   {
     year: 'Jan 2026',
