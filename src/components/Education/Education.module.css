@@ -29,7 +29,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 18px;
 }
 
@@ -47,13 +47,6 @@
   color: var(--color-muted);
   letter-spacing: 1.5px;
   margin-bottom: 14px;
-}
-
-.capstone {
-  font-size: 16px;
-  line-height: 1.65;
-  margin: 0;
-  color: var(--color-fg);
 }
 
 .focusList {

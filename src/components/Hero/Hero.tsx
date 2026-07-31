@@ -11,7 +11,7 @@ function Hero({ name, title, tagline }: HeroProps) {
     <div className={styles.hero}>
       <div className={styles.badge}>
         <span className={styles.badgeDot} />
-        MASTER OF ENG · APPLIED DATA SCIENCE · IN PROGRESS
+        MASTER OF ENG · APPLIED DATA SCIENCE · IN PROGRESS · GRAD DEC 2026
       </div>
       <h1 className={styles.name}>{name}</h1>
       <div className={styles.title}>{`// ${title}`}</div>

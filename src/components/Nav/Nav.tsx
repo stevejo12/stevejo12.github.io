@@ -29,7 +29,7 @@ function Nav({ name }: NavProps) {
       </div>
       <div className={styles.statusPill}>
         <span className={styles.statusDot} />
-        ml.eng / open
+        co-op · jan 2027
       </div>
     </div>
   );

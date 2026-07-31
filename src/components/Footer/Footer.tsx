@@ -10,7 +10,7 @@ function Footer({ name }: FooterProps) {
       <span>
         © {new Date().getFullYear()} {name}
       </span>
-      <span>Trained on coffee · fine-tuned for late nights</span>
+      <span>No coffee required · fine-tuned for early mornings</span>
     </div>
   );
 }

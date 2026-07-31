@@ -14,10 +14,6 @@ function Education({ education }: EducationProps) {
       </h2>
       <div className={styles.grid}>
         <div className={styles.card}>
-          <div className={styles.cardLabel}>CAPSTONE</div>
-          <p className={styles.capstone}>{education.capstone}</p>
-        </div>
-        <div className={styles.card}>
           <div className={styles.cardLabel}>FOCUS AREAS</div>
           <ul className={styles.focusList}>
             {education.focus.map((f) => (
@@ -34,7 +30,7 @@ function Education({ education }: EducationProps) {
             <span className={styles.statusDot} />
             {education.status}
           </div>
-          <div className={styles.statusNote}>Graduate research alongside personal projects. Capstone shipping in 2026.</div>
+          <div className={styles.statusNote}>{education.statusNote}</div>
         </div>
       </div>
     </div>

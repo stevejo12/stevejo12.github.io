@@ -12,12 +12,13 @@ function ChatSection({ name }: ChatSectionProps) {
       <h2 className={styles.secTitle}>
         chat<span className={styles.accent}>(</span>about_me<span className={styles.accent}>)</span>
       </h2>
-      <p className={styles.desc}>A real LLM grounded in this CV via a system prompt. Ask anything.</p>
+      <p className={styles.desc}>
+        A real LLM grounded in this CV via a system prompt — under construction, wiring up the backend now.
+      </p>
       <div className={styles.panelWrap}>
         <ChatbotPanel
           name={name}
           initialPrompts={["What's a RAG system?", 'Walk me through your transition', 'Best project to start with?']}
-          placeholder="prompt the model…"
         />
       </div>
     </div>
